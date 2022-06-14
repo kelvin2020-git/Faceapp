@@ -10,7 +10,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const Publi =({post})=>{
   
   const [like, setlike] = useState(false)
-  const [Like, setLikes] = useState([post.likes])
+  const [Like, setLikes] = useState(0)
     const handlelike=()=>{
     if(like){
       setLikes(Like-1)
@@ -190,18 +190,17 @@ const Publi =({post})=>{
 
 
 
-
-
-
-
-
 const Post = () => {
 
 
   const data = ([
-    { id:1, nombre:"kelvin castillo",fecha:"hace un minuto",contenido:"esta es una prueba" ,likes:900, comentario:2},
-    {id:2, nombre:"jose",fecha:"hace un minuto",contenido:"esta es una segunda prueba" ,likes:100, comentario:2},
-    {id:3, nombre:"mario",fecha:"hace un minuto",contenido:"esta es una tercera prueba" ,likes:670, comentario:2},
+    { id:1, nombre:"kelvin castillo",fecha:"hace 1 minuto",contenido:"esta es una prueba" , comentario:2},
+    {id:2, nombre:"jose",fecha:"hace 2 minuto",contenido:"esta es una segunda prueba" , comentario:3},
+    {id:3, nombre:"mario",fecha:"hace 5 minuto",contenido:"esta es una tercera prueba" , comentario:6},
+    {id:4, nombre:"juan",fecha:"hace 40 minuto",contenido:"esta es una tercera prueba" , comentario:27},
+    {id:5, nombre:"luis",fecha:"hace 27 minuto",contenido:"esta es una tercera prueba" , comentario:20},
+    {id:6, nombre:"Abel",fecha:"hace 10 minuto",contenido:"esta es una tercera prueba" , comentario:40},
+    {id:7, nombre:"cinthya",fecha:"hace 30 minuto",contenido:"esta es una tercera prueba" , comentario:50},
   ])
 
 
